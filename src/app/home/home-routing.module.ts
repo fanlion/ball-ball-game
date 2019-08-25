@@ -4,6 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { AboutModule } from './about/about.module';
+import { RegisterComponent } from './register/register.component';
+import { RankComponent } from './rank/rank.component';
+import { AboutComponent } from './about/about.component';
+import { GameComponent } from './game/game.component';
 
 const routes: Routes = [
   {
@@ -12,19 +16,23 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+    component: LoginComponent
   },
   {
     path: 'register',
-    loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)
+    component: RegisterComponent
   },
   {
     path: 'rank',
-    loadChildren: () => import('./rank/rank.module').then(m => m.RankModule)
+    component: RankComponent
   },
   {
     path: 'about',
-    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+    component: AboutComponent
+  },
+  {
+    path: 'game',
+    component: GameComponent
   }
 ];
 
