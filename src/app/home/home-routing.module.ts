@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: DashboardComponent
   },
   {

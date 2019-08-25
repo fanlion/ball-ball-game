@@ -25,9 +25,12 @@
               "src/favicon.512x512.png"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/pace-js/themes/blue/pace-theme-center-atom.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/pace-js/pace.min.js"
+            ]
           },
           "configurations": {
             "dev": {
@@ -93,9 +96,12 @@
             "polyfills": "src/polyfills-test.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "scripts": [],
+            "scripts": [
+              "node_modules/pace-js/pace.min.js"
+            ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/pace-js/themes/blue/pace-theme-center-atom.css"
             ],
             "assets": [
               "src/assets",
