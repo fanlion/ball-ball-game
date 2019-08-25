@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { AboutModule } from './about/about.module';
 import { RegisterComponent } from './register/register.component';
 import { RankComponent } from './rank/rank.component';
 import { AboutComponent } from './about/about.component';
 import { GameComponent } from './game/game.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent
+    path: '',
+    component: DashboardComponent
   },
   {
     path: 'login',
@@ -33,7 +33,7 @@ const routes: Routes = [
   {
     path: 'game',
     component: GameComponent
-  }
+  },
 ];
 
 @NgModule({
